@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Caprasimo&family=Geologica:wght@100;200;300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* root-colors */
+:root{
+    --main : #802BB1;
+    --dark-p:#2d283e;
+    --gray-p:#4c495d;
+    --gray-p-l:#564f6f;
+    --cream:#acc9f1;
+    --white:#fff;
+    --shodow-box:0 5px 15px rgba(0,0,0,0.2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-color: var(--cream);
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+::before,::after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    background-color: #b794cb;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-contant-bet{
+    justify-content: space-between;
+}
+
+
+
+/* navbar-s */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: var(--dark-p);
+    z-index: 9999;
+    padding: 23px;
+}
+
+
+.navbar .menu .item-nav{
+    display: inline-block;
+}
+/* navbar-e */
