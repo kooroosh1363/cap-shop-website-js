@@ -42,6 +42,13 @@ ul{
     box-sizing: border-box;
 }
 
+
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
 .container{
     max-width: 1200px;
     margin: auto;
@@ -84,6 +91,62 @@ ul{
     color: var(--main);
     font-weight: 900;
 }
+
+
+.wrap-effect .effect{
+    position: absolute;
+    z-index: -1;
+}
+
+
+.effect-1{
+    width: 30px;
+    height: 30px;
+    right: 10%;
+    bottom: 10%;
+    border: 4px solid var(--main);
+    animation: spin 4s linear infinite;
+}
+
+.effect-2{
+    left: 3%;
+    bottom: 8%;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: bounchTop 3s ease-in-out infinite;
+}
+
+
+.effect-2 div{
+    width: 4px;
+    height: 4px;
+    background-color: var(--main);
+    margin: 0 3px 8px;
+}
+
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes bounchTop{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+}
+
+
 
 
 
