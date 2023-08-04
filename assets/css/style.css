@@ -60,13 +60,37 @@ ul{
     align-items: center;
 }
 
+.f-screen{
+    min-height: 100vh;
+    padding: 80px 0 0;
+}
+
+
+.btn-1{
+    padding: 15px 15px;
+    color: var(--white);
+    background-color: var(--main);
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-1:hover{
+    border: 1px solid var(--main);
+    background-color: transparent;
+    color: var(--main);
+    font-weight: 900;
+}
+
 
 
 /* navbar-s */
 .navbar{
     position: fixed;
     width: 100%;
-    background-color: var(--dark-p);
     z-index: 9999;
     padding: 23px;
 }
@@ -78,34 +102,6 @@ ul{
 }
 
 
-
-.circle-logo{
-    position: relative;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
-    display: inline-block;
-    border: 4px solid var(--white);
-    margin-bottom: -2px;
-
-}
-
-.circle-logo::before{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -4px;
-    margin-left: -4px;
-    content: "";
-    background-color: var(--white);
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-
-}
-
-
-
 .logo a{
     text-transform: capitalize;
     color: var(--white);
@@ -114,14 +110,14 @@ ul{
 }
 
 
-.navbar .menu .item-nav{
+.item-nav{
     display: inline-block;
     margin-right: 30px;
 
 }
 
 
-.navbar .menu .item-nav .link-nav{
+.link-nav{
     font-size: 16px;
     font-weight: 600;
     display: block;
@@ -147,3 +143,83 @@ ul{
 
 
 /* navbar-e */
+
+
+
+
+
+/* home-s */
+.home-sec{
+    position: relative;
+}
+
+.home-sec::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 160%;
+    bottom: 0;
+    background-image: url('../img/bg-shape.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.home-sec .text-home,
+.home-sec .image-home {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+
+.text-home h2{
+    font-size: 65px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 65px;
+}
+
+
+.text-home h2 span{
+    color: var(--main);
+}
+
+
+
+.text-home p{
+    color: var(--white);
+    font-size: 20px;
+    margin: 30px 0 60px 0;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+
+.box-img{
+    max-width: 400px;
+    margin: auto;
+}
+
+.box-img img{
+    width: 100%;
+    animation: productAnimation 3s linear infinite;
+}
+
+@keyframes productAnimation{
+    0%,100%{
+        transform: translateX(40px);
+    }
+    50%{
+        transform: translateX(-40px);
+    }
+}
+
+
+
+
+/* home-e */
