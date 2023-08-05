@@ -24,7 +24,7 @@ body{
     font-size: 16px;
     font-weight: normal;
     overflow-x: hidden;
-    background-color: var(--cream);
+    background-color: var(--white) !important;
     letter-spacing: 1px;
 }
 
@@ -85,7 +85,7 @@ img{
 }
 
 
-.title{
+.title-sec .title{
     font-size: 22px;
     font-weight: 900;
     line-height: 25px;
@@ -191,7 +191,7 @@ img{
     position: absolute ;
     left: -30px;
     top: -20px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 
@@ -211,7 +211,7 @@ img{
 
 .effect-4 div{
     width: 1px;
-    background-color: var(--main);
+    /* background-color: var(--main); */
 }
 
 
@@ -245,7 +245,7 @@ img{
 .navbar{
     position: fixed;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
     padding: 23px;
 }
 
