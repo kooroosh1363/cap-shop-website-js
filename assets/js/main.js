@@ -12,22 +12,22 @@ const color = document.querySelectorAll(".color");
 // shop product info
 var info = [
     {
-        src:"../img/black.png"
+        src:"/assets/img/black.png"
     },
     {
-        src: "../img/green.png"
+        src: "/assets/img/green.png"
     },
     {
-        src:"../img/red.png"
+        src:"/assets/img/red.png"
     },
     {
-        src:"../img/sand.png"
+        src:"/assets/img/sand.png"
     },
     {
-        src:"../img/greyWhite.png"
+        src:"/assets/img/greyWhite.png"
     },
     {
-        src:"../img/white.png"
+        src:"/assets/img/white.png"
     }
 ]
 
