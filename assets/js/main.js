@@ -12,24 +12,43 @@ const color = document.querySelectorAll(".color");
 // shop product info
 var info = [
     {
-        src:"../img/36W-black.png"
+        src:"../img/black.png"
     },
     {
-        src: "../img/36W-green.png"
+        src: "../img/green.png"
     },
     {
-        src:"../img/36W-red.png"
+        src:"../img/red.png"
     },
     {
-        src:"../img/46V-sand.png"
+        src:"../img/sand.png"
     },
     {
-        src:"../img/48V-grey-white.png"
+        src:"../img/greyWhite.png"
     },
     {
-        src:"../img/36W-white.png"
-    },
+        src:"../img/white.png"
+    }
 ]
 
 
 // change-color
+
+black.addEventListener("click",function(){
+    img.src = info[0].src;
+})
+green.addEventListener("click",function(){
+    img.src = info[1].src;
+})
+red.addEventListener("click",function(){
+    img.src = info[2].src;
+})
+sand.addEventListener("click",function(){
+    img.src = info[3].src;
+})
+grayWhite.addEventListener("click",function(){
+    img.src = info[4].src;
+})
+white.addEventListener("click",function(){
+    img.src = info[5].src;
+})
