@@ -82,6 +82,7 @@ img{
     max-width: 100%;
     margin-bottom: 60px;
     text-align: center;
+    flex-direction: column !important;
 }
 
 
