@@ -6,7 +6,7 @@ var sand = document.querySelector(".sand");
 var grayWhite = document.querySelector(".gray-white");
 var white = document.querySelector(".white");
 
-const color = document.querySelectorAll(".color");
+const color = document.querySelectorAll(".colors");
 
 
 // shop product info
@@ -52,3 +52,12 @@ grayWhite.addEventListener("click",function(){
 white.addEventListener("click",function(){
     img.src = info[5].src;
 })
+
+
+// active color
+function colors(){
+    colors.forEach(c => c.classList.remove('active'));
+    this.classList.add('active');
+}
+
+colors.forEach(c => c.addEventListener('click',color));
