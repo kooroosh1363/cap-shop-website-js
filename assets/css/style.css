@@ -76,6 +76,10 @@ img{
     padding: 80px 0;
 }
 
+.product-items{
+    display: flex;
+    flex-direction: column;
+}
 
 .title-sec{
     flex: 0 0 100%;
