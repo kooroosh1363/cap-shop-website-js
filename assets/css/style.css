@@ -679,5 +679,24 @@ img {
     border-radius: 50%;
     font-size: 16px;
     border: 1px solid var(--main);
+    color: var(--main);
+    line-height: 38px;
+    text-align: center;
+}
+
+
+.info-contact-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--dark-p);
+}
+
+.info-contact-item p{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 26px;
+    color: var(--dark-p);
 }
 /* contact-e */
