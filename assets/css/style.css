@@ -576,7 +576,7 @@ img {
     position: absolute;
     left: -28%;
     top: 0;
-    width: 50px;
+    width: 3.2rem;
     height: 100%;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -590,7 +590,7 @@ img {
 }
 
 .icon-card {
-    font-size: 18px;
+    font-size: 1.2rem;
     color: var(--dark-p);
 }
 
@@ -614,15 +614,15 @@ img {
 
 
 .card-preci-before {
-    font-size: 15px;
+    font-size: 0.70rem;
     color: var(--main);
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: .25rem;
 }
 
 
 .card-preci-now {
-    font-size: 16px;
+    font-size: .95rem;
     font-weight: bold;
     color: var(--dark-p);
 }
@@ -632,7 +632,7 @@ img {
 }
 
 .product-item .product-item-inner:hover .card-img{
-    margin-left: 48px;
+    margin-left: 3rem;
 }
 
 .product-item .product-item-inner:hover .card-precis{
