@@ -656,4 +656,28 @@ img {
     max-width: 66.66%;
     padding: 20px;
 }
+
+.info-contact h3{
+    font-size: 22px;
+    color: var(--dark-p);
+    font-weight: 700;
+    margin: 0 0 40px;
+}
+
+.info-contact-item{
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 30px;
+}
+
+.info-contact-item i{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    border: 1px solid var(--main);
+}
 /* contact-e */
