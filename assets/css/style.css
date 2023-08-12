@@ -699,4 +699,54 @@ img {
     line-height: 26px;
     color: var(--dark-p);
 }
+
+
+
+.form-contact .left,
+.form-contact .right{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+.form-contact .left{
+    padding-right: 10px;
+}
+
+.form-contact .right{
+    padding-left: 10px;
+}
+
+.form-contact .group-form{
+    margin-bottom: 25px;
+}
+
+.form-contact .control-form{
+    height: 52px;
+    width: 100%;
+    border: 1px solid transparent;
+    box-shadow: var(--shodow-box);
+    border-radius: 30px;
+    padding: 0 24px;
+    color: var(--dark-p);
+    background-color: var(--white);
+    transition: .5s;
+}
+
+.form-contact .control-form:focus{
+    border-color: var(--main);
+}
+
+
+.width-full{
+    width: 100%;
+}
+
+
+.form-contact textarea.control-form{
+    height: 140px;
+    padding: 12px;
+    resize: none;
+}
+
 /* contact-e */
