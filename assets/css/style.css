@@ -553,6 +553,7 @@ img {
     flex: 0 0 25%;
     max-width: 25%;
     padding: 20px;
+    cursor: pointer;
 }
 
 .product-item .product-item-inner {
