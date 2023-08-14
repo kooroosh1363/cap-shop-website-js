@@ -1,0 +1,55 @@
+:root {
+    --main: #802BB1;
+    --dark-p: #2d283e;
+    --gray-p: #4c495d;
+    --gray-p-l: #564f6f;
+    --cream: #acc9f1;
+    --white: #fff;
+    --shodow-box: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:991px){
+    .navbar{
+        background-color: var(--main);
+    }
+    .navbar .menu{
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: var(--main);
+        margin-top: 25px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.07);
+        transition: all 0.5s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar.sticky .menu{
+        background-color: var(--main);
+        top: 65px;
+    }
+
+
+    .navbar .menu .item-nav{
+        display: block;
+        margin: 18px 0;
+    }
+    
+    .navbar.sticky .menu .item-nav .link-nav{
+        color: var(--white);
+    }
+
+    .navbar .btn-menu{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .container{
+        padding: 0;
+    }
+}

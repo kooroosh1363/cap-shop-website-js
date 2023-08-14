@@ -299,7 +299,7 @@ img {
 
 .btn-menu {
     color: var(--white);
-    background-color: var(--main);
+    background-color: var(--main) !important;
     font-size: 30px;
     height: 35px;
     width: 45px;
@@ -308,6 +308,7 @@ img {
     line-height: 35px;
     text-align: center;
     display: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 
