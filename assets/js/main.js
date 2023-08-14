@@ -5,6 +5,29 @@ window.onscroll = () => {
     this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 
+// navabr toggle
+const menuNav = document.querySelector(".menu");
+toggleNav = document.querySelector(".btn-menu");
+if(toggleNav){
+    toggleNav.addEventListener("click", () =>{
+        menuNav.classList.toggle("active");
+    })
+}
+
+
+
+// when clicked btn-menu closed
+const linkNav = document.querySelectorAll(".link-nav");
+function actionLink(){
+    const menuNav = document.querySelector(".menu");
+    menuNav.classList.remove("active")
+}
+linkNav.forEach(n => n.addEventListener("click", actionLink));
+
+
+// product color
+
+
 
 var img = document.querySelector("#main-cap");
 var black = document.querySelector(".black");

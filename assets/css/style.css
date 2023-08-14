@@ -11,6 +11,10 @@
     --shodow-box: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -112,7 +116,7 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--dark-p);
+    /* background-color: var(--dark-p); */
     border-radius: 4px;
     z-index: -1;
     opacity: 0.2;
@@ -299,7 +303,7 @@ img {
 
 .btn-menu {
     color: var(--white);
-    background-color: var(--main);
+    background-color: var(--main) !important;
     font-size: 30px;
     height: 35px;
     width: 45px;
@@ -308,6 +312,7 @@ img {
     line-height: 35px;
     text-align: center;
     display: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 
