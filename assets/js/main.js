@@ -1,3 +1,11 @@
+// resize navbar
+var navbar = document.querySelector(".navbar");
+// for the scroll is higher than 20 viewport height, add sticky class to the navbar
+window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}
+
+
 var img = document.querySelector("#main-cap");
 var black = document.querySelector(".black");
 var red = document.querySelector(".red");
@@ -61,3 +69,6 @@ function colors(){
 }
 
 colors.forEach(c => c.addEventListener('click',color));
+
+
+

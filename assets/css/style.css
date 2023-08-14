@@ -261,10 +261,10 @@ img {
 }
 
 
-.navbar .sticky{
+.sticky{
     padding: 10px 25px;
-    box-shadow: var(--main);
-    background-color: var(--cream);
+    box-shadow: var(--dark-p);
+    background-color: var(--main);
 }
 
 .navbar .container {
