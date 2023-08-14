@@ -14,6 +14,8 @@ if(toggleNav){
     })
 }
 
+
+
 // when clicked btn-menu closed
 const linkNav = document.querySelectorAll(".link-nav");
 function actionLink(){
@@ -21,6 +23,11 @@ function actionLink(){
     menuNav.classList.remove("active")
 }
 linkNav.forEach(n => n.addEventListener("click", actionLink));
+
+
+// product color
+
+
 
 var img = document.querySelector("#main-cap");
 var black = document.querySelector(".black");

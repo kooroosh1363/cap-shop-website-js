@@ -11,6 +11,10 @@
     --shodow-box: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -112,7 +116,7 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--dark-p);
+    /* background-color: var(--dark-p); */
     border-radius: 4px;
     z-index: -1;
     opacity: 0.2;

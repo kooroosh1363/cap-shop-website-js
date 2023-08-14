@@ -52,4 +52,130 @@
     .navbar .container{
         padding: 0;
     }
+
+
+    .home-sec .text-home h2{
+        font-size: 48px;
+        line-height: 48px;
+
+    }
+
+    .home-sec .text-home p{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .home-sec .image-home .box-img{
+        max-width: 380px;
+    }
+
+
+    .product-items .product-item{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+
+    .form-contact .left,
+    .form-contact .right{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .info-contact{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .form-contact{
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+
+    footer{
+        height: 600px;
+    }
+    .col-right,
+    .col-left{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 150px;
+    }
+
+    .col-right{
+        order: 1;
+    }
+    .col-left{
+        order: 2;
+    }
+}
+
+
+
+@media (max-width:767px){
+    .effect-3{
+        left: 14%;
+        top: 45%;
+    }
+
+    .effect-4{
+        top: 32%;
+        right: 5%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-contact .info-contact,
+    .section-contact .form-contact,
+    .about-sec .img-about,
+    .home-sec .image-home,
+    .home-sec .text-home{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home-sec .f-screen{
+        padding: 100px 0;
+    }
+
+    .home-sec .image-home .box-img{
+        max-width: 350px;
+        margin-top: 70px;
+    }
+
+    .about-sec .img-about .box-img{
+        padding-bottom: 30px;
+        max-width: 300px;
+    }
+
+    .product-items .product-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    
+}
+
+
+@media (max-width:500px){
+    footer{
+        height: 630px;
+    }
+    .product-items .product-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .form-news .text-btn{
+        max-width: 260px;
+        padding: 16px 20px;
+    }
 }
