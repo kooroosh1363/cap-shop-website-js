@@ -1,0 +1,10 @@
+{
+  "name":"caplab-vanilla-commerce-state",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "scripts":{
+    "test":"node --test",
+    "check":"node --check assets/js/main.js && node --check assets/js/products.js && node --check assets/js/store.js && node --check assets/js/persistence.js && npm test"
+  }
+}

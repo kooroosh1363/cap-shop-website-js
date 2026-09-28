@@ -1,390 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/query_style.css">
-    <!-- bootstrap-icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Cap Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CapLab is a vanilla JavaScript commerce-state demo with product configuration, favorites, persistent cart state, filters, tests, and CI.">
+  <meta name="color-scheme" content="light">
+  <title>CapLab — Vanilla JS Commerce State Demo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-    <!-- navbar-s -->
-    <nav class="navbar sticky">
-        <div class="container">
-            <div class="row justify-contant-bet align-item-cen">
-                <div class="logo">
-                    <a href="index.html"><span class="circle-logo"></span>Cap Shop</a>
-                </div>
-                <ul class="menu ">
-                    <li class="item-nav"><a href="#home" class="link-nav">HOME</a></li>
-                    <li class="item-nav"><a href="#about" class="link-nav">ABOUT US</a></li>
-                    <li class="item-nav"><a href="#product" class="link-nav">PRODUCT</a></li>
-                    <li class="item-nav"><a href="#contact" class="link-nav">CONTACT US</a></li>
-                </ul>
-                <div class="btn-menu">
-                    <i class="bi bi-list"></i>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- navbar-e -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="brand" href="#home" aria-label="CapLab home">
+        <span aria-hidden="true">CL</span>
+        CapLab
+      </a>
 
+      <button class="menu-button" type="button" data-menu-toggle aria-controls="primary-nav" aria-expanded="false">
+        Menu
+      </button>
 
-    <!-- home-s -->
-    <section class="home-sec" id="home">
-        <div class="wrap-effect">
-            <div class="effect effect-1"></div>
-            <div class="effect effect-2">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="effect effect-3"></div>
-            <div class="effect effect-4">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row f-screen align-item-cen">
-                <div class="text-home">
-                    <h2>Cap <span> wear cap</span> lighter than air</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit commodi ducimus
-                        recusandae provident error dolorem a explicabo ad. Omnis!</p>
-                    <a href="#" class="btn-1">BUY NOW</a>
-                </div>
-                <div class="image-home">
-                    <div class="box-img">
-                        <img src="./assets/img/greyWhite.png" alt="cap">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- home-e -->
+      <nav id="primary-nav" class="nav" data-nav aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#configurator">Configurator</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-
-
-    <!-- about-s -->
-    <div class="about-sec padding-sec" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="img-about">
-                    <div class="box-img">
-                        <img src="/assets/img/sand.png" id="main-cap" alt="black-cap">
-                    </div>
-                </div>
-                <div class="text-about">
-                    <div class="title-sec">
-                        <h1 class="title">About Prouduct</h1>
-                        <h1 class="subtitle">A Good Cap Makes The Flight Of Imagination Possible</h1>
-                    </div>
-                    <div class="content-about">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, recusandae. Fugit
-                            quibusdam natus minus amet rem omnis harum unde recusandae!</p>
-                        <div class="color-container">
-                            <h3 class="title">
-                                Select Color
-                            </h3>
-                            <div class="colors">
-                                <span class="color black"></span>
-                                <span class="color green"></span>
-                                <span class="color red"></span>
-                                <span class="color sand"></span>
-                                <span class="color active gray-white"></span>
-                                <span class="color white"></span>
-                            </div>
-                        </div>
-                        <div class="price">
-                            <h3 class="title">Each Price</h3>
-                            <span class="price-new">$12.00</span>
-                            <span class="price-old">$15.00</span>
-                        </div>
-                        <a href="#" class="btn-1">Buy Now</a>
-                        <a href="#" class="config">
-                            <i>How Can You Choose Your Cap</i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <button class="cart-button" type="button" data-cart-toggle aria-expanded="false" aria-controls="cart-drawer">
+        Cart <span data-cart-count>0</span>
+      </button>
     </div>
-    <!-- about-e -->
+  </header>
 
-
-    <!-- product-s -->
-    <section class="product-items padding-sec" id="product">
-        <div class="container">
-            <div class="row">
-                <div class="title-sec">
-                    <h1 class="title">Our Product</h1>
-                    <h2 class="subtitle">Our New Product</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="product-item">
-                    <div class="product-item-inner">
-                        <div class="card-img">
-                            <img src="./assets/img/black.png" alt="">
-                        </div>
-                        <div class="name-card">
-                            <p>Black Cap</p>
-                        </div>
-                        <div class="card-precis">
-                            <a href="#" class="icon-card"><i class="bi bi-heart-fill"></i></a>
-                            <div>
-                                <span class="card-preci card-preci-before">$50.00</span>
-                                <span class="card-preci card-preci-now">$40.00</span>
-                            </div>
-                            <a href="#" class="icon-card"><i class="bi bi-cart4"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item">
-                    <div class="product-item-inner">
-                        <div class="card-img">
-                            <img src="./assets/img/green.png" alt="">
-                        </div>
-                        <div class="name-card">
-                            <p>Green Cap</p>
-                        </div>
-                        <div class="card-precis">
-                            <a href="#" class="icon-card"><i class="bi bi-heart-fill"></i></a>
-                            <div>
-                                <span class="card-preci card-preci-before">$50.00</span>
-                                <span class="card-preci card-preci-now">$40.00</span>
-                            </div>
-                            <a href="#" class="icon-card"><i class="bi bi-cart4"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item">
-                    <div class="product-item-inner">
-                        <div class="card-img">
-                            <img src="./assets/img/greyWhite.png" alt="">
-                        </div>
-                        <div class="name-card">
-                            <p>Grey White Cap</p>
-                        </div>
-                        <div class="card-precis">
-                            <a href="#" class="icon-card"><i class="bi bi-heart-fill"></i></a>
-                            <div>
-                                <span class="card-preci card-preci-before">$50.00</span>
-                                <span class="card-preci card-preci-now">$40.00</span>
-                            </div>
-                            <a href="#" class="icon-card"><i class="bi bi-cart4"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item">
-                    <div class="product-item-inner">
-                        <div class="card-img">
-                            <img src="./assets/img/red.png" alt="">
-                        </div>
-                        <div class="name-card">
-                            <p>Red Cap</p>
-                        </div>
-                        <div class="card-precis">
-                            <a href="#" class="icon-card"><i class="bi bi-heart-fill"></i></a>
-                            <div>
-                                <span class="card-preci card-preci-before">$50.00</span>
-                                <span class="card-preci card-preci-now">$40.00</span>
-                            </div>
-                            <a href="#" class="icon-card"><i class="bi bi-cart4"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item">
-                    <div class="product-item-inner">
-                        <div class="card-img">
-                            <img src="./assets/img/white.png" alt="">
-                        </div>
-                        <div class="name-card">
-                            <p>White Cap</p>
-                        </div>
-                        <div class="card-precis">
-                            <a href="#" class="icon-card"><i class="bi bi-heart-fill"></i></a>
-                            <div>
-                                <span class="card-preci card-preci-before">$50.00</span>
-                                <span class="card-preci card-preci-now">$40.00</span>
-                            </div>
-                            <a href="#" class="icon-card"><i class="bi bi-cart4"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item">
-                    <div class="product-item-inner">
-                        <div class="card-img">
-                            <img src="./assets/img/sand.png" alt="">
-                        </div>
-                        <div class="name-card">
-                            <p>Sand Cap</p>
-                        </div>
-                        <div class="card-precis">
-                            <a href="#" class="icon-card"><i class="bi bi-heart-fill"></i></a>
-                            <div>
-                                <span class="card-preci card-preci-before">$50.00</span>
-                                <span class="card-preci card-preci-now">$40.00</span>
-                            </div>
-                            <a href="#" class="icon-card"><i class="bi bi-cart4"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+  <main id="main">
+    <section class="hero shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Vanilla JavaScript commerce state</p>
+        <h1>One product family. Real interface state.</h1>
+        <p class="lede">
+          CapLab modernizes the original 2023 cap shop into a data-driven storefront demo:
+          configuration, favorites, persistent cart state, search, filtering, and tested calculations.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#catalog">Browse caps</a>
+          <button class="button button-secondary" type="button" data-cart-toggle>Open cart</button>
         </div>
+      </div>
+
+      <div class="hero-product" aria-live="polite">
+        <div class="hero-product__media">
+          <img data-hero-image src="./assets/img/greyWhite.png" alt="Grey White Cap" width="620" height="520">
+        </div>
+        <div class="hero-product__footer">
+          <div>
+            <span>Configured preview</span>
+            <strong data-hero-name>Grey White Cap</strong>
+          </div>
+          <strong data-hero-price>$42.00</strong>
+        </div>
+      </div>
     </section>
-    <!-- product-e -->
 
-
-    <!-- contact-s -->
-    <section class="section-contact padding-section" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="title-sec">
-                    <h1 class="title">Contact Us</h1>
-                    <h2 class="subtitle">Always in touch</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="info-contact">
-                    <h3>Please contact us And Ask Any a question:</h3>
-                    <div class="info-contact-item">
-                        <i class="bi bi-envelope-at"></i>
-                        <p>WW@gmail.com</p>
-                    </div>
-                    <div class="info-contact-item">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <h4>Address Company:</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="info-contact-item">
-                        <i class="bi bi-phone-flip"></i>
-                        <h4>Call Us:</h4>
-                        <p>+90922222222</p>
-                    </div>
-                </div>
-                <div class="form-contact">
-                    <form action="">
-                        <div class="row">
-                            <div class="left">
-                                <div class="group-form">
-                                    <input type="text" placeholder="Your Name" class="control-form">
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="group-form">
-                                    <input type="email" placeholder="ww@gmail.com" class="control-form">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="width-full">
-                                <div class="group-form">
-                                    <input type="text" placeholder="+909000000000" class="control-form">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="width-full">
-                                <div class="group-form">
-                                    <input type="text" placeholder="subject" class="control-form">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="width-full">
-                                <div class="group-form">
-                                    <textarea name="" placeholder="Your Text" class="control-form" id="" cols="30"
-                                        rows="10"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="width-full">
-                                <button class="btn-1" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <section class="section shell" id="configurator" aria-labelledby="configurator-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / Configurator</p>
+          <h2 id="configurator-title">Choose a color without reloading the page.</h2>
         </div>
+        <p>
+          Each swatch drives the same product state used by the preview, catalog, favorites, and cart.
+        </p>
+      </div>
+
+      <div class="configurator-card">
+        <div>
+          <h3>Colorway</h3>
+          <p>Selection persists in localStorage between visits.</p>
+        </div>
+        <div class="swatches" role="group" aria-label="Cap color">
+          <button class="swatch swatch-black" type="button" data-product-id="black" aria-pressed="false"><span class="sr-only">Black</span></button>
+          <button class="swatch swatch-green" type="button" data-product-id="green" aria-pressed="false"><span class="sr-only">Green</span></button>
+          <button class="swatch swatch-grey" type="button" data-product-id="grey-white" aria-pressed="true"><span class="sr-only">Grey White</span></button>
+          <button class="swatch swatch-red" type="button" data-product-id="red" aria-pressed="false"><span class="sr-only">Red</span></button>
+          <button class="swatch swatch-sand" type="button" data-product-id="sand" aria-pressed="false"><span class="sr-only">Sand</span></button>
+          <button class="swatch swatch-white" type="button" data-product-id="white" aria-pressed="false"><span class="sr-only">White</span></button>
+        </div>
+      </div>
     </section>
-    <!-- contact-e -->
 
-    <!-- footer-s -->
-    <footer>
-        <div class="container">
-            <div class="row ">
-                <div class="col-left">
-                    <div class="logo"><a href="index.html"><span class="sircle-logo"></span>Cap</a></div>
-                    <div class="so-media">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <p class="text-left">&copy; 2023 created by All rights reserved.</p>
-                </div>
-                <div class="col-right">
-                    <h1>New News</h1>
-                    <div class="border"></div>
-                    <p>Please Enter Your Email For To Get New Product.</p>
-                    <form action="#" class="form-news">
-                        <input type="text" class="text-btn" placeholder="ww@gamil.com">
-                        <input type="submit" class="btn-1" value="submit">
-                    </form>
-                </div>
-            </div>
+    <section class="section section-muted" id="catalog" aria-labelledby="catalog-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / Catalog</p>
+            <h2 id="catalog-title">A product grid rendered from data.</h2>
+          </div>
+          <p data-result-count aria-live="polite">6 products</p>
         </div>
-    </footer>
-    <!-- footer-e -->
 
+        <div class="catalog-controls">
+          <label class="search-control">
+            <span>Search products</span>
+            <input type="search" data-search placeholder="Try black, neutral, outdoor…">
+          </label>
+          <label class="favorites-control">
+            <input type="checkbox" data-favorites-only>
+            <span>Favorites only</span>
+          </label>
+        </div>
 
-    <!-- js-link -->
-    <script src="./assets/js/main.js"></script>
+        <div class="product-grid" data-product-grid></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 / Contact demo</p>
+          <h2 id="contact-title">Explicitly local. No fake backend.</h2>
+        </div>
+        <p>
+          This form demonstrates accessible local validation behavior only. Nothing is sent anywhere.
+        </p>
+      </div>
+
+      <form class="contact-form" data-demo-form>
+        <label>
+          <span>Name</span>
+          <input name="name" type="text" minlength="2" maxlength="80" required autocomplete="name">
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" maxlength="254" required autocomplete="email">
+        </label>
+        <label class="contact-form__wide">
+          <span>Message</span>
+          <textarea name="message" rows="5" minlength="10" maxlength="600" required></textarea>
+        </label>
+        <div class="contact-form__wide form-actions">
+          <button class="button button-primary" type="submit">Validate message</button>
+          <span data-form-status aria-live="polite">No data leaves this page.</span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cart-drawer" data-cart-drawer hidden aria-labelledby="cart-title">
+    <div class="cart-drawer__header">
+      <div>
+        <p class="eyebrow">Persistent cart</p>
+        <h2 id="cart-title">Your selection</h2>
+      </div>
+      <button type="button" data-cart-close>Close</button>
+    </div>
+    <div class="cart-drawer__items" data-cart-items></div>
+    <div class="cart-drawer__footer">
+      <span>Subtotal</span>
+      <strong data-cart-subtotal>$0.00</strong>
+      <p>Demo only — no checkout or payment processing.</p>
+    </div>
+  </aside>
+  <div class="cart-backdrop" data-cart-backdrop hidden></div>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div>
+        <strong class="footer-brand">CapLab</strong>
+        <p>Vanilla JS · persistent state · tested commerce logic</p>
+      </div>
+      <form class="newsletter" data-newsletter>
+        <label>
+          <span>Demo newsletter</span>
+          <input type="email" required placeholder="you@example.com">
+        </label>
+        <button type="submit">Validate</button>
+        <span data-newsletter-status aria-live="polite"></span>
+      </form>
+    </div>
+  </footer>
+
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
-
 </html>
